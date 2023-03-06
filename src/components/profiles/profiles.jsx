@@ -26,7 +26,6 @@ const Profiles = () => {
         } else {
             setSearchResults(users)
         }
-        setUsers(searchResults)
         return
     }
 
@@ -42,7 +41,7 @@ const Profiles = () => {
                             label="Search by first or last name"
                             className="mb-3"
                         >
-                            <Form.Control type="search" onChange={onSearch} />
+                            <Form.Control type="search" onInput={onSearch} onChange={onSearch} />
                         </FloatingLabel>
                     </FormGroup>
                 </Form>
