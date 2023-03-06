@@ -17,7 +17,6 @@ const Details = (props) => {
             delete userResp.tags
             setUser(userResp);
             setUserKeys(Object.keys(userResp))
-            console.log(user, userKeys);
         };
         fetchUser();
     }, [id]);

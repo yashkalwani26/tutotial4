@@ -13,7 +13,6 @@ const Profiles = () => {
             const userResp = await response.json();
             setUsers(userResp)
             setSearchResults(userResp)
-            console.log(users)
         };
         fetchUsers();
     }, []);
